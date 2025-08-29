@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>💕 Para Fer 💕</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&family=Poppins:wght@300;400;500;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Partículas de amor flotando -->
+    <div id="love-particles"></div>
+    
+    <!-- Corazones flotantes de fondo -->
+    <div class="floating-hearts-bg">
+        <i class="fas fa-heart"></i>
+        <i class="fas fa-heart"></i>
+        <i class="fas fa-heart"></i>
+        <i class="fas fa-heart"></i>
+        <i class="fas fa-heart"></i>
+        <i class="fas fa-heart"></i>
+        <i class="fas fa-heart"></i>
+        <i class="fas fa-heart"></i>
+    </div>
+
+    <!-- Hero Section with Dynamic Title -->
+    <section class="hero-section">
+        <div class="stars-container">
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+        </div>
+        
+        <div class="hero-content">
+            <div class="magical-title">
+                <h1 class="main-title">
+                    <span class="word">Para</span>
+                    <span class="word">La</span>
+                    <span class="word">Chica que se merece el mundo</span>
+                    <span class="highlight-word">Fer</span>
+                </h1>
+                <div class="title-decoration">
+                    <i class="fas fa-heart"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-heart"></i>
+                </div>
+            </div>
+            
+            <div class="birthday-announcement">
+                <div class="age-circle">
+                    <span class="age-number">17</span>
+                    <span class="age-text">años de belleza</span>
+                </div>
+            </div>
+            
+            <p class="romantic-subtitle">
+                Love you 
+            </p>
+            
+            <button class="enter-gallery-btn" onclick="scrollToGallery()">
+                <span class="btn-text">Momentos Unicos</span>
+                <i class="fas fa-arrow-down"></i>
+            </button>
+        </div>
+        
+        <div class="scroll-magic">
+            <div class="scroll-indicator">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Photo Gallery Section -->
+    <section id="gallery" class="gallery-section">
+        <div class="container">
+            <div class="gallery-header">
+                <h2 class="gallery-title">
+                    <i class="fas fa-camera-retro"></i>
+                    Momentos que Atesoro
+                    <i class="fas fa-heart"></i>
+                </h2>
+                <p class="gallery-subtitle">Momentos Juntos unicos</p>
+            </div>
+            
+            <div class="photo-grid">
+                <!-- Foto 1: Elegante -->
+                <div class="photo-card elegant-photo" data-photo="1">
+                    <div class="photo-container">
+                        <div class="photo-glow"></div>
+                        <img src="31106571-f9e9-4ea2-b435-9f90272a614f.jpg" alt="Fer - Momento Elegante" class="photo" onerror="this.src='https://via.placeholder.com/400x500/FF9A9E/FFFFFF?text=Foto+Elegante+de+Fer'">
+                        <div class="photo-overlay">
+                            <div class="photo-info">
+                                <h3>Jugar contigo es lo mejor</h3>
+                                <p>La paso bien y me divierto una banda contigo mi vida✨</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Foto 2: Gaming -->
+                <div class="photo-card gaming-photo" data-photo="2">
+                    <div class="photo-container">
+                        <div class="photo-glow"></div>
+                        <img src="888eeba6-141f-48b5-9c29-bbb7a4ea514b.jpg" alt="Fer y Álvaro Gaming" class="photo" onerror="this.src='https://via.placeholder.com/400x300/63A4FF/FFFFFF?text=Álvaro+y+Fer_mailov'">
+                        <div class="photo-overlay">
+                            <div class="photo-info">
+                                <h3>Amo cada segundo contigo</h3>
+                                <p>Te amo con todo mi corazon</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Foto 3: Divertida -->
+                <div class="photo-card fun-photo" data-photo="3">
+                    <div class="photo-container">
+                        <div class="photo-glow"></div>
+                        <img src="027ad8f8-4fec-4361-ba32-ea76e91c2b7c.jpg" alt="Fer siendo divertida" class="photo" onerror="this.src='https://via.placeholder.com/400x500/FF6B6B/FFFFFF?text=Fer+Divertida'">
+                        <div class="photo-overlay">
+                            <div class="photo-info">
+                                <h3>Foton jiji</h3>
+                                <p>Sos facherisima mi vida</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Foto 4: Misteriosa -->
+                <div class="photo-card mystery-photo" data-photo="4">
+                    <div class="photo-container">
+                        <div class="photo-glow"></div>
+                        <img src="b9a7ded4-ec12-4975-92f3-76987bf1a088.jpg" alt="Fer y Álvaro misteriosos" class="photo" onerror="this.src='https://via.placeholder.com/400x500/444444/FFFFFF?text=Lado+Misterioso'">
+                        <div class="photo-overlay">
+                            <div class="photo-info">
+                                <h3>La chica mas hermosa del mundo</h3>
+                                <p>Como podes ser tan hermosa por dios de verdad que me dejas sin aliento y palabras al verte✨</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Foto 5: Nueva especial -->
+                <div class="photo-card special-photo" data-photo="5">
+                    <div class="photo-container">
+                        <div class="photo-glow"></div>
+                        <img src="4ce34398-07dd-4221-bf42-9ab31504b401.jpg" alt="Fer - Momento Especial" class="photo" onerror="this.src='https://via.placeholder.com/400x500/FF6B9D/FFFFFF?text=Momento+Especial'">
+                        <div class="photo-overlay">
+                            <div class="photo-info">
+                                <h3>Tryhard en todo</h3>
+                                <p>Sos buenisima en todo chiquita 💫</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Foto 6: Captura romántica -->
+                <div class="photo-card romantic-capture" data-photo="6">
+                    <div class="photo-container">
+                        <div class="photo-glow"></div>
+                        <img src="Captura de pantalla 2024-07-31 184138.png" alt="Captura Romántica" class="photo" onerror="this.src='https://via.placeholder.com/400x300/8B5CF6/FFFFFF?text=Captura+Romántica'">
+                        <div class="photo-overlay">
+                            <div class="photo-info">
+                                <h3>TE AMO</h3>
+                                <p>TEAMOTEAMOTEAMOTEAMO</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Foto 7: Otra captura -->
+                <div class="photo-card memory-capture" data-photo="7">
+                    <div class="photo-container">
+                        <div class="photo-glow"></div>
+                        <img src="Captura de pantalla 2024-09-09 193402.png" alt="Captura de Recuerdos" class="photo" onerror="this.src='https://via.placeholder.com/400x300/EC4899/FFFFFF?text=Recuerdos'">
+                        <div class="photo-overlay">
+                            <div class="photo-info">
+                                <h3>Fornais siempre</h3>
+                                <p>Siempre al fornais jiji</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Foto 8: Imagen especial -->
+                <div class="photo-card treasured-photo" data-photo="8">
+                    <div class="photo-container">
+                        <div class="photo-glow"></div>
+                        <img src="image.png" alt="Imagen Atesorada" class="photo" onerror="this.src='https://via.placeholder.com/400x400/F59E0B/FFFFFF?text=Imagen+Atesorada'">
+                        <div class="photo-overlay">
+                            <div class="photo-info">
+                                <h3>Minecraft</h3>
+                                <p>Somos los mejores constructores</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Foto 9: Nueva foto especial -->
+                <div class="photo-card beautiful-moment" data-photo="9">
+                    <div class="photo-container">
+                        <div class="photo-glow"></div>
+                        <img src="157e76b5-435b-4921-81e9-252b79665c6e.jpg" alt="Fer - Momento Hermoso" class="photo" onerror="this.src='https://via.placeholder.com/400x500/EC4899/FFFFFF?text=Momento+Hermoso'">
+                        <div class="photo-overlay">
+                            <div class="photo-info">
+                                <h3> <3 </h3>
+                                <p>Simplemente te amo.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Love Message Section -->
+    <section class="love-message-section">
+        <div class="container">
+            <div class="message-container">
+                <div class="message-header">
+                    <div class="message-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h2>Fer</h2>
+                </div>
+                
+                <div class="message-content">
+                    <div class="love-letter">
+                        <p class="letter-line">Fers‽</p>
+                        <p class="letter-line">
+                            Quiero decirte que te amo con todo mi corazon, sos la mejor persona que conozco, te adoro y amo quiero que sepas
+                            que sos mi vida entera. 
+                        </p>
+                        <p class="letter-line">
+                            Amo todo lo que eres y todo lo que sos, jamas mi amor por vos disminuira solo va aumentar y crecer hasta el infinito,
+                            se que quizas no todo siempre sea color de rosa pero de verdad que quiero que sepas que me esfuerzo y quiero crecer contigo.
+                        </p>
+                        <p class="letter-line">
+                            En estos 17 años has crecido para convertirte en la persona más 
+                            increíble que conozco. Sos absolutamente increible y quiero tener una vida contigo.
+                        </p>
+                        <p class="letter-line signature">
+                            Con todo mi amor<br>
+                            <span class="signature-name"> Álvaro     💕</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Birthday Countdown -->
+    <section class="countdown-section">
+        <div class="container">
+            <h2 class="countdown-title">
+                <i class="fas fa-birthday-cake"></i>
+                Faltan para celebrar tus 17 años
+            </h2>
+            <div class="countdown-display">
+                <div class="countdown-item">
+                    <span class="countdown-number" id="days">00</span>
+                    <span class="countdown-label">Días</span>
+                </div>
+                <div class="countdown-item">
+                    <span class="countdown-number" id="hours">00</span>
+                    <span class="countdown-label">Horas</span>
+                </div>
+                <div class="countdown-item">
+                    <span class="countdown-number" id="minutes">00</span>
+                    <span class="countdown-label">Minutos</span>
+                </div>
+                <div class="countdown-item">
+                    <span class="countdown-number" id="seconds">00</span>
+                    <span class="countdown-label">Segundos</span>
+                </div>
+            </div>
+            <p class="birthday-date">4 de Septiembre</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <h3>💕 Cada vez falta mas poco para tu cumple jiji 💕</h3>
+                <p>Esta galería fue creada especialmente para ti, con todo mi cariño</p>
+                <div class="footer-hearts">
+                    <i class="fas fa-heart"></i>
+                    <i class="fas fa-heart"></i>
+                    <i class="fas fa-heart"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Full Screen Photo Modal -->
+    <div id="photo-modal" class="photo-modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <img id="modal-image" src="" alt="">
+            <div class="modal-info">
+                <h3 id="modal-title"></h3>
+                <p id="modal-description"></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
