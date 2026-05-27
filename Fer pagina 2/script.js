@@ -133,6 +133,27 @@ function initializeGalleryEffects() {
     const modalTitle = document.getElementById('modal-title');
     const modalDescription = document.getElementById('modal-description');
     const modalClose = document.querySelector('.modal-close');
+
+     // Guardar/volver scroll para evitar que el fondo se mueva
+    function lockBodyScroll() {
+        const scrollY = window.scrollY || window.pageYOffset;
+        document.body.dataset.scrollY = scrollY;
+        document.body.style.position = 'fixed';
+        document.body.style.top = `-${scrollY}px`;
+        document.body.style.left = '0';
+        document.body.style.right = '0';
+        document.body.style.width = '100%';
+    }
+     function unlockBodyScroll() {
+        const scrollY = parseInt(document.body.dataset.scrollY || '0', 10);
+        document.body.style.position = '';
+        document.body.style.top = '';
+        document.body.style.left = '';
+        document.body.style.right = '';
+        document.body.style.width = '';
+        delete document.body.dataset.scrollY;
+        window.scrollTo(0, scrollY);
+    }
     
     // Información de cada foto
     const photoInfo = {
@@ -203,6 +224,7 @@ function initializeGalleryEffects() {
                 modalTitle.textContent = info.title;
                 modalDescription.textContent = info.description;
                 modal.style.display = 'block';
+                lockBodyScroll();
                 
                 // Agregar efecto especial al abrir modal
                 createConfettiExplosion();
@@ -213,11 +235,13 @@ function initializeGalleryEffects() {
     // Cerrar modal
     modalClose.addEventListener('click', () => {
         modal.style.display = 'none';
+        unlockBodyScroll();
     });
     
     modal.addEventListener('click', (e) => {
         if (e.target === modal) {
             modal.style.display = 'none';
+            unlockBodyScroll();
         }
     });
 }
